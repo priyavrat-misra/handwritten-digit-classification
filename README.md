@@ -8,36 +8,22 @@ The objective of this project is to classify a given image of handwritten digit 
 
 <br>
 
-## Getting Started
-```bash
-git clone https://github.com/priyavrat-misra/handwritten-digit-classification.git
-cd handwritten-digit-classification/
-pip install -r requirements.txt
-```
-
 ## The process will be broken down into the following steps:
 > * [Exploring the dataset](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/data_exploration.ipynb "data_exploration.ipynb")
 > * [Defining a neural network architecture](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/network.py "network.py")
-> * Training the model
+> * Hyper-parameter search and Training the model
 >    - [without validation](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/train.ipynb "train.ipynb")
 >    - [with validation](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/train_with_validation.ipynb "train_with_validation.ipynb")
 > * [Evaluating the model's results and making cool graphs!](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/results.ipynb "results.ipynb")
 
 
 ## Results:
-```
-* Training without validation
-    - Train Accuracy: 99.30%
-    - Test Accuracy: 99.19%
+> || Train Accuracy | Validation Accuracy | Test Accuracy |
+> | :- | -: | -: | -: |
+> | Training without validation | 99.30% | - | 99.19% |
+> | Training with validation | *99.34% | 99.06% | 99.14% |
 
-* Training with validation
-    - Train Accuracy: 99.51%
-    - Test Accuracy: 99.14%
-```
-
-<br>
-
-__Note:__ this project uses Tensorboard as an evaluation utility for checking running losses, accuracies, histograms etc. So if you are wondering why there are no outputs (running loss, epoch number etc) while the network is training, use Tensorboard (_open terminal, change path to project's repo and run this command `tensorboard --logdir=runs`_) or if you aren't a fan of 3rd party tools, adding a bunch of print statements will do the job.
+_<sub>* - running accuracy</sub>_
 
 <br>
 
