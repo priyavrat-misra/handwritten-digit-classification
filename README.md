@@ -14,23 +14,32 @@ The objective of this project is to classify a given image of handwritten digit 
 > * Hyper-parameter search and Training the model
 >    - [without validation](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/train.ipynb "train.ipynb")
 >    - [with validation](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/train_with_validation.ipynb "train_with_validation.ipynb")
-> * [Evaluating the model's results and making cool graphs!](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/results.ipynb "results.ipynb")
+> * [Evaluating the model's results and plotting graphs](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/results.ipynb "results.ipynb")
+> * Experiment how RNNs do on image data
+>    - [defining various RNN architectures](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/rnns.py "rnns.py")
+>    - [training those models](https://github.com/priyavrat-misra/handwritten-digit-classification/blob/master/train_with_rnns.ipynb "train_with_rnns.ipynb")
 
 
 ## Results:
 > || Train Accuracy | Validation Accuracy | Test Accuracy |
 > | :- | -: | -: | -: |
-> | Training without validation | 99.30% | - | 99.19% |
-> | Training with validation | *99.34% | 99.06% | 99.14% |
+> | `Training without validation | 99.30% | - | 99.19% |
+> | `Training with validation | *99.34% | 99.06% | 99.14% |
+> | ^Training with Vanilla RNN | *95.18% | - | 95.86% |
+> | ^Training with GRU | *99.42% | - | 98.97% |
+> | ^Training with LSTM | *99.24% | - | 98.85% |
+> | ^Training with Bidirectional LSTM | *99.16% | - | 98.89% |
 
-_<sub>* - running accuracy</sub>_
+_<sub>* - running accuracy;</sub>_
+_<sub>` - trained for 4 epochs;</sub>_
+_<sub>^ - trained for 8 epochs;</sub>_
 
 <br>
 
 ## Todo
 - [x] data exploration
 - [x] train model with validation
-- [ ] train with RNNs
+- [x] experiment how RNNs do on image data
 - [ ] add data augmentation
 - [ ] deploy with flask
 
