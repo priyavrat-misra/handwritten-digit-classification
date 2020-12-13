@@ -30,6 +30,7 @@ _<sub>* - running accuracy</sub>_
 ## Todo
 - [x] data exploration
 - [x] train model with validation
+- [ ] train with RNNs
 - [ ] add data augmentation
 - [ ] deploy with flask
 

@@ -5,6 +5,13 @@ from itertools import product
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 
+def count_params(model):
+    '''
+    returns the number of trainable parameters in some model
+    '''
+    return sum(p.numel() for p in model.parameters() if p.requires_grad)
+
+
 def get_num_correct(preds, labels):
     """
     calculates the number of correct predictions.
